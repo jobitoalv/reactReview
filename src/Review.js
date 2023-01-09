@@ -23,10 +23,10 @@ const Review = () => {
       <button className='next-btn'>
         <FaChevronRight/>
       </button>
-      <button className='random-btn'>
+    </div>
+    <button className='random-btn'>
         <BiDizzy/>
       </button>
-    </div>
   </article>;
 };
 
