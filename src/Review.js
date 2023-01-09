@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import people from './data';
 import { FaChevronLeft, FaChevronRight, FaQuoteRight } from 'react-icons/fa';
+import { BiDizzy } from "react-icons/bi";
 
 const Review = () => {
   const [index,setIndex] = useState(0);
@@ -16,8 +17,14 @@ const Review = () => {
     <p className='job'>{job}</p>
     <p className='info'>{text}</p>
     <div className='button-container'>
-      <button>
+      <button className='prev-btn'>
         <FaChevronLeft/>
+      </button>
+      <button className='next-btn'>
+        <FaChevronRight/>
+      </button>
+      <button className='random-btn'>
+        <BiDizzy/>
       </button>
     </div>
   </article>;
