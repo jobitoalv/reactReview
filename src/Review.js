@@ -29,6 +29,11 @@ const Review = () => {
       return checkNumber(newIndex);
     })
   }
+
+  const randomPerson = () => {
+
+  }
+
   return <article className='review'>
     <div className='img-container'>
       <img src={image} alt={name} className='person-img'/>
@@ -47,7 +52,7 @@ const Review = () => {
         <FaChevronRight/>
       </button>
     </div>
-    <button className='random-btn'>
+    <button className='random-btn'onClick={randomPerson}>
         <BiDizzy/>
       </button>
   </article>;
